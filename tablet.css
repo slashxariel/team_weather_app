@@ -7,10 +7,59 @@
         display: none;
     }
 
+    .weather_full_info--main--current_opinion{
+        display: block;
+    }
+
+    .weather_full_info--main--magnifier {
+        display: none;
+    }
+    
+    .weather_full_info--main--text_tomorrow {
+        display: block;
+    }
+    
+    .current_main_info--header--text {
+        display: block;
+    }
+    
+    .weather_full_info--main--text_opinion {
+        display: block;
+    }
+
     hr {
         display: block;
         width: 800px;
     }
+
+    .current_main_info--place_date_text {
+        display: flex;
+    }
+
+    .current_main_info--header--magnifier {
+        display: block;
+        padding-right: 5%;
+    }
+
+    .current_main_info--header--time {
+        display: flex;
+        padding: 0;
+    }
+
+    .current_main_info {
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .current_main_info--header--text {
+        display: flex;
+    }
+
+    .current_main_info--place_date_text {
+        position: relative;
+    }
+    
 
     .weather_full_info--main--weather_conditions:nth-child(2) {
         display: block;
@@ -37,8 +86,6 @@
         display: flex;
         justify-content: left;
     }
-
-    
 
     .weather_full_info--main--weather_conditions {
         display: inline-block;
@@ -70,35 +117,6 @@
         display: block;
     }
 
-    .main_class {
-        background-color: rgba(51, 51, 51, 0.6);
-        color: white; 
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-left: 5%;
-    }
-
-    .current_main_info--header--time {
-        display: flex;
-        padding: 0;
-    }
-
-    .current_main_info {
-        display: flex;
-        justify-content: space-between;
-        padding: 5%;
-    }
-
-    .current_main_info--header--text {
-        display: flex;
-    }
-
-    .current_main_info--place_date_text {
-        position: relative;
-    }
-    
-
     .weather_full_info--main--place_date {
         display: none;
     }
@@ -106,11 +124,6 @@
     .weather_full_info--main--current_info {
         justify-content: right;
         font-size: 100%;
-    }
-
-
-    .main-temperature-tomorrow {
-        font-size: 300%;
     }
 
     .weather_full_info--main--temperature {
@@ -127,6 +140,19 @@
         padding-left: 0;
     }
     
+    .main_class {
+        background-color: rgba(51, 51, 51, 0.6);
+        color: white; 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+    .main-temperature-tomorrow {
+        font-size: 300%;
+    }
+
     .footer {
         padding-top: 5%; 
     }
@@ -134,11 +160,6 @@
         width: 100%;  
         display: flex;
         justify-content: center;     
-    }
-
-    .weather-info-next-days-footer {
-        display: flex;
-        justify-content: space-evenly;
     }
 
     .footer--info--next--days_mobile {

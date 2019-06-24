@@ -20,6 +20,14 @@ hr {
     display: none;
 }
 
+.weather_full_info:last-child {
+    display: none;
+}
+
+.current_main_info--header--magnifier {
+    display: none;
+}
+
 .footer--info--next--days_tablet {
     display: none;
 }
@@ -29,7 +37,7 @@ hr {
     flex-direction: column;
 }
 
-.weather_full_info:last-child {
+.:last-child {
     display: none;
 }
 
@@ -41,7 +49,11 @@ hr {
     display: none;
 }
 
-.text-tomorrow {
+.weather_full_info--main--text_tomorrow {
+    display: none;
+}
+
+.current_main_info--text_tomorrow_header {
     display: none;
 }
 
@@ -55,6 +67,15 @@ hr {
 
 .weather_full_info--main--temperature_tablet {
     display: none;
+}
+
+.weather_full_info--main--current_opinion {
+    display: none;
+}
+
+.weather_full_info--main--magnifier {
+    height: 15px;
+    padding-left: 5px;
 }
 
 .footer--info--next--days_mobile {
