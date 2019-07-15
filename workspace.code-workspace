@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "/home/ariel/Projetos/weather_app_first-try"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "weather_app"
+	}
+}
