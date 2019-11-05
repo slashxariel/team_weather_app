@@ -60,6 +60,13 @@
         position: relative;
     }
     
+    .weather_full_info--main--temperature_mobile_min {
+        display: none;
+    }
+
+    .weather_full_info--main--temperature_mobile_max {
+        display: none;
+    }
 
     .weather_full_info--main--weather_conditions:nth-child(2) {
         display: block;

@@ -11,6 +11,16 @@
         display: none;
     }
 
+
+    .weather_full_info--main--temperature_mobile_min {
+        display: none;
+    }
+
+    .weather_full_info--main--temperature_mobile_max {
+        display: none;
+    }
+
+
     .sidebar {
         display: flex;  
         flex-direction: column;
@@ -29,6 +39,7 @@
     .sidebar--cities {
         list-style: none;
         padding-top: 20%;
+        width: 150%;
     }
 
     .sidebar--list {

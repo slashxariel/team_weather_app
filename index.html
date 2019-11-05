@@ -116,13 +116,14 @@
                 </div>
                 
                 <div class="weather_full_info--main--current_info">
-                    <h4 id = "date" class="weather_full_info--main--place_date"></h4>
+                    <h4 id="date" class="weather_full_info--main--place_date"></h4>
                 </div>
                 
                 <div class="weather_full_info--main--current_info">
                     <h4 id = "location" class="weather_full_info--main--place_date"></h4>
                     <div class="weather_full_info--main--magnifier">
-                            <img src="./assets/img/icons/loupe1.png" class="weather_full_info--main--magnifier" alt="Search">
+                        <input type="text" id="search" class="weather_full_info--main--current_info--placeholder" placeholder="">
+                        <img src="./assets/img/icons/loupe1.png"  id="search-btn" class="weather_full_info--main--magnifier" alt="Search">
                     </div>          
                         
                 </div>
@@ -137,17 +138,19 @@
                 <div class="weather_full_info--main--weather_conditions">
 
                     <div class="weather_full_info--main--icon">
-                        <img src="./assets/img/icons/wind1.png" class="weather_full_info--main--icon_conditions"><span class="weather_full_info--main--conditions_text">100 km/h</span>
+                        <img src="./assets/img/icons/wind1.png" class="weather_full_info--main--icon_conditions"><span id = "wind_speed" class="weather_full_info--main--conditions_text"></span>
                     </div>
                     <div class="weather_full_info--main--weather_conditions">
                         <div class="weather_full_info--main--icon">
-                            <img src="./assets/img/icons/raindrop.png" class="weather_full_info--main--icon_conditions"><span class="weather_full_info--main--conditions_text">15 mm</span>
+                            <img src="./assets/img/icons/raindrop.png" class="weather_full_info--main--icon_conditions"><span id = "rain" class="weather_full_info--main--conditions_text"></span>
                         </div>
                     </div>
                 
                     <div class="weather_full_info--main--weather_conditions">
-                        <div class="weather_full_info--main--icon">
-                            <img src="./assets/img/icons/current_temperature.png" class="weather_full_info--main--temperature_mobile">
+                        <div class="weather_full_info--main--icon_forecast_temperature">
+                            <span class="weather_full_info--main--temperature_mobile_min">-17º</span>
+                            <img src="./assets/img/icons/current_temperature_without-num.png" class="weather_full_info--main--temperature_mobile">
+                            <span class="weather_full_info--main--temperature_mobile_max">-5º</span>
                         </div>
                     </div>
                         
@@ -169,7 +172,7 @@
         
         <hr>
         
-        <section id="tomorrow" class="weather_full_info">
+        <section class="weather_full_info">
             
             <div class="weather_full_info--main--info_tablet">  
                 <h2 class="weather_full_info--main--text_tomorrow">Amanhã</h2>              
@@ -216,13 +219,16 @@
         <section class="footer--next--days">
                 <div class="footer--info--next--days">
                     
-                    <h2>Terça</h2>
+                    <h2 id="tomorrow"></h2>
                     
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                    
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>
                     </div>
                     
                     <div class="footer--info--next--days_tablet">
@@ -238,12 +244,15 @@
 
                 <div class="footer--info--next--days">
                     
-                    <h2>Quarta</h2>
+                    <h2 id="day_after_tomorrow"></h2>
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                        
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>                        
                     </div>
                         
                     <div class="footer--info--next--days_tablet">
@@ -258,12 +267,15 @@
                 
                 <div class="footer--info--next--days">
                     
-                    <h2>Quinta</h2>
+                    <h2 id="three_days_after_tomorrow"></h2>
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                        
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>                                                
                     </div>
                     <div class="footer--info--next--days_tablet">
                         <div class="footer--icon">
@@ -277,12 +289,15 @@
                 
                 <div class="footer--info--next--days">
                 
-                    <h2>Sexta</h2>
+                    <h2 id="four_days_after_tomorrow"></h2>
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                        
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>                                                
                     </div>
                     <div class="footer--info--next--days_tablet">
                     
@@ -297,12 +312,15 @@
             
                 <div class="footer--info--next--days">
                     
-                    <h2>Sábado</h2>
+                    <h2 id="five_days_after_tomorrow"></h2>
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                        
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>                                                
                     </div>
                         
                     <div class="footer--info--next--days_tablet">
@@ -318,12 +336,15 @@
                 
                 <div class="footer--info--next--days">
                     
-                    <h2>Domingo</h2>
+                    <h2 id="six_days_after_tomorrow">Domingo</h2>
                     <div class="footer--info--next--days_mobile">
                     
                         <img src="./assets/img/icons/rain.png" class="footer--icon">
-                        <img src="./assets/img/icons/min&max.png" class="footer--icon">
-                        
+                        <div class="weather_full_info--main--temperature_footer">
+                            <span class="weather_full_info--main--temperature_footer_max">-5º</span>                         
+                            <img src="./assets/img/icons/min&max_without_num.png" class="footer--icon">
+                            <span class="weather_full_info--main--temperature_footer_min">-17º</span>   
+                        </div>                                                
                     </div>
                         
                     <div class="footer--info--next--days_tablet">

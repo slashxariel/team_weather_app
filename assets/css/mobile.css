@@ -76,6 +76,13 @@ hr {
 .weather_full_info--main--magnifier {
     height: 15px;
     padding-left: 5px;
+    cursor: pointer;
+}
+
+.weather_full_info--main--current_info--placeholder {
+    display: none;
+    border-radius: 10%;
+    padding: 3px;
 }
 
 .footer--info--next--days_mobile {
@@ -130,6 +137,7 @@ hr {
 .weather_full_info--main--weather_conditions {
     display: flex;
     justify-content: space-around; 
+    align-items: flex-end;
 }
 
 .weather_full_info--main--icon {
@@ -137,6 +145,18 @@ hr {
     flex-direction: column;
 }
 
+.weather_full_info--main--icon_forecast_temperature {
+    display: flex;
+    flex-direction: column-reverse;    
+}
+
+.weather_full_info--main--temperature_mobile_min {
+    align-self: flex-start;   
+}
+
+.weather_full_info--main--temperature_mobile_max {
+    align-self: flex-end;
+}
 
 .footer {
     overflow-x: scroll;
@@ -159,4 +179,17 @@ hr {
     min-width: 120px;
 } 
 
+.weather_full_info--main--temperature_footer_min {
+    align-self: flex-start; 
+    color: #333333;  
+}
 
+.weather_full_info--main--temperature_footer_max {
+    align-self: flex-end;
+    color: #333333;
+}
+
+.weather_full_info--main--temperature_footer {
+    display: flex;
+    flex-direction: column;
+}
